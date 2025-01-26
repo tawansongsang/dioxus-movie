@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "patbenatar.advanced-new-file",
+    "fill-labs.dependi",
+    "tamasfe.even-better-toml",
+    "yzhang.markdown-all-in-one",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "wayou.vscode-todo-highlight",
+    "vscodevim.vim",
+    "alefragnani.bookmarks",
+    "dioxuslabs.dioxus",
+    "rust-lang.rust-analyzer",
+    "bradlc.vscode-tailwindcss",
+    "simonsiefke.svg-preview",
+    "dbankier.vscode-quick-select",
+    "ms-azuretools.vscode-docker",
+    "usernamehw.errorlens"
+  ]
+}
