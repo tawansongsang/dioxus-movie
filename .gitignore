@@ -23,3 +23,7 @@ Cargo.lock
 #.idea/
 
 /tmp
+
+/node_modules
+package-lock.json
+package.json
