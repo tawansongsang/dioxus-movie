@@ -19,6 +19,7 @@ If you chose to develop with the router feature, you will also have a `views` fo
 
 ```bash
 npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
+npx @tailwindcss/cli -i ./input.css -o ./assets/tailwind.css --watch
 ```
 
 ### Serving Your App
