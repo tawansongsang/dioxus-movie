@@ -5,8 +5,11 @@ Dioxus Movie Web App
 
 ### Create base image
 ``` bash
-docker build . -t fedora-rust-dev -f docker/fedora/Dockerfile.rust
-docker build . -t fedora-dioxus-dev -f ./docker/fedora/Dockerfile.rust-dioxus
+docker build . -t fedora-rust-dev -f Dockerfile.rust
+docker build . -t fedora-dioxus-dev -f Dockerfile.rust-dioxus
+
+podman build -t fedora-rust-dev -f Dockerfile.rust
+podman build -t fedora-dioxus-dev -f Dockerfile.rust-dioxus
 ```
 
 Your new jumpstart project includes basic organization with an organized `assets` folder and a `components` folder. 

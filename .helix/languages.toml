@@ -1,0 +1,18 @@
+[[language]]
+name = "rust"
+#formatter = { command = "rustfmt" }
+formatter = { command = "bash", args = ["-c", "rustfmt | dx fmt -f -"] }
+auto-format = true
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+inlayHints.bindingModeHints.enable = true
+inlayHints.typeHints.hideClosureInitialization = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy-driver"
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"
