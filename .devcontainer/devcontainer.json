@@ -3,7 +3,8 @@
 {
   "name": "dioxus-movie",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "fedora-dioxus-dev:latest",
+  // "image": "fedora:latest",
+  "build": { "dockerfile": "Dockerfile" },
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
