@@ -1,20 +1,12 @@
 use dioxus::prelude::*;
 
 use components::Navbar;
+use routes::Route;
 use views::{Blog, Home};
 
 mod components;
+mod routes;
 mod views;
-
-#[derive(Debug, Clone, Routable, PartialEq)]
-#[rustfmt::skip]
-enum Route {
-    #[layout(Navbar)]
-    #[route("/")]
-    Home {},
-    #[route("/blog/:id")]
-    Blog { id: i32 },
-}
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/styling/main.css");

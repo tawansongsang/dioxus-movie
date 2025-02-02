@@ -6,6 +6,7 @@ mouse = true
 idle-timeout = 50
 rulers = [80]
 cursorline = true
+completion-timeout = 5
 #end-of-line-diagnostics = "hint"
 
 [editor.file-picker]
