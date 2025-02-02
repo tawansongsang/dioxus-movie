@@ -3,6 +3,7 @@ name = "rust"
 #formatter = { command = "rustfmt" }
 formatter = { command = "bash", args = ["-c", "rustfmt | dx fmt -f -"] }
 auto-format = true
+language-servers = ["rust-analyzer", "tailwindcss-ls"]
 
 [language-server.rust-analyzer]
 command = "rust-analyzer"
@@ -16,3 +17,28 @@ command = "clippy-driver"
 
 [language-server.rust-analyzer.config.cargo]
 features = "all"
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
+
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+config = { userLanguages = { rust = "html", "*.rs" = "html" } }
