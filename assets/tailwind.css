@@ -1,11 +1,18 @@
-/*! tailwindcss v4.0.0 | MIT License | https://tailwindcss.com */
-@tailwind base;
-@tailwind components;
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
 .visible {
   visibility: visible;
 }
+.relative {
+  position: relative;
+}
 .container {
   width: 100%;
+}
+.hidden {
+  display: none;
+}
+.inline {
+  display: inline;
 }
 .transform {
   transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
