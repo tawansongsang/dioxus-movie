@@ -1,8 +1,6 @@
 use dioxus::prelude::*;
 
-use components::Navbar;
 use routes::Route;
-use views::{Blog, Home};
 
 mod components;
 mod routes;

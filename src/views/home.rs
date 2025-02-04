@@ -1,4 +1,4 @@
-use crate::components::{Card, Hero};
+use crate::components::Card;
 use dioxus::prelude::*;
 
 #[component]
