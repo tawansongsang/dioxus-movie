@@ -2,14 +2,13 @@
 Dioxus Movie Web App
 
 ## Development
+for develop in container refer to dev_server
 
 ### Create base image
 ``` bash
-docker build . -t fedora-rust-dev -f Dockerfile.rust
-docker build . -t fedora-dioxus-dev -f Dockerfile.rust-dioxus
+docker build . -t fedora-dioxus-dev -f Dockerfile.dev
 
-podman build -t fedora-rust-dev -f Dockerfile.rust
-podman build -t fedora-dioxus-dev -f Dockerfile.rust-dioxus
+podman build -t fedora-dioxus-dev -f Dockerfile.dev
 ```
 
 Your new jumpstart project includes basic organization with an organized `assets` folder and a `components` folder. 
@@ -21,7 +20,6 @@ If you chose to develop with the router feature, you will also have a `views` fo
 3. Run the following command in the root of the project to start the Tailwind CSS compiler:
 
 ```bash
-npx tailwindcss -i ./input.css -o ./assets/tailwind.css --watch
 npx @tailwindcss/cli -i ./input.css -o ./assets/tailwind.css --watch
 ```
 
